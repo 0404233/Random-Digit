@@ -1,0 +1,35 @@
+html {
+  overflow: hidden;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: red;
+  transition: 0.3s ease;
+  overflow-x: hidden;
+  font-size: 200px;
+}
+
+/* .body .num {
+  display: none;
+} */
+
+.num {
+  width: 1em;
+  height: 1em;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.body.active {
+  background: greenyellow;
+  visibility: visible;
+}
+
+.body.active .num {
+  display: block;
+}
