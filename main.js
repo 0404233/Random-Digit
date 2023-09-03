@@ -8,13 +8,13 @@ const activeBody = document.querySelector(".body.active");
 body.onclick = changeColor;
 
 function changeColor() {
-  body.classList.toggle("active");
-  let x = String(Math.round(Math.random() * 10));
-  num.textContent = x;
-}
+    //   body.classList.toggle("active");
+    let x = String(Math.round(Math.random() * 10));
+    num.textContent = x;
 
-if (body.style.background == 'red') {
-  console.log(0)
-} else {
-  console.log(1)
+    if (x % 2 === 0) {
+        body.classList.add("active");
+    } else {
+        body.classList.remove("active");
+    }
 }
