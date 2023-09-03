@@ -2,6 +2,10 @@ html {
   overflow: hidden;
 }
 
+html * {
+  margin: 0;
+}
+
 .body {
   display: flex;
   align-items: center;
@@ -10,12 +14,8 @@ html {
   background: red;
   transition: 0.3s ease;
   overflow-x: hidden;
-  font-size: 200px;
+  font-size: 40vh;
 }
-
-/* .body .num {
-  display: none;
-} */
 
 .num {
   width: 1em;
